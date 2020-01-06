@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {View, Text, StyleSheet, Image, SafeAreaView, ImageBackground } from "react-native";
 import Entypo from 'react-native-vector-icons/Entypo';
+import Fontawesome5 from 'react-native-vector-icons/FontAwesome5';
+
 import { Linking } from 'expo';
 import {Header, Left, Icon, Body, Right} from 'native-base'
 import { TouchableOpacity } from "react-native-gesture-handler";
@@ -35,38 +37,38 @@ class Collaborare extends Component{
                         </Body>
                         <Right style={{flex:1}}/>
                 </Header>
-                    <View style={{flex:1, marginLeft:20}}>
+                    <View style={{flex:1, marginLeft:20, marginRight: 20}}>
                         <Text style={{fontFamily: 'Roboto-Regular', fontSize: normalize(28), marginTop: 20, margin: 15}}>
                             Perchè collaborare?
                         </Text>
                         <Text style={{fontFamily: 'Roboto-Light', fontSize: normalize(18), marginTop: 3, margin: 15,}}>
                             O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o 
-                            texto padrão usado por estas indústrias desde o ano de 1500, batata frita e assada zubilei zubileu.
+                            texto padrão usado por estas indústrias desde o ano de 1500.
                         </Text>
                     </View>
-                    <View style={{backgroundColor:'rgba(105, 186, 131, 0.1)', flex:1.7, margin: 30, borderRadius: 16, borderWidth: 1.5 , borderColor: '#rgba(105, 186, 131, 0.2)', justifyContent:'space-around', alignItems:'center'}}>
+                    <View style={{backgroundColor:'rgba(105, 186, 131, 0.1)', flex:1, marginTop:30 ,marginHorizontal: 30, borderRadius: 16, borderWidth: 1.5 , borderColor: '#rgba(105, 186, 131, 0.2)', justifyContent:'space-around', alignItems:'center'}}>
                         <View style={{flex:1, justifyContent:'space-around'}}>
-                            <Text style={{fontFamily:'Roboto-Medium', fontSize: normalize(30)}}>
+                            <Text style={{fontFamily:'Roboto-Medium', fontSize: normalize(26)}}>
                                 ACCOUNT NUMBER
                             </Text>
-                            <Text style={{fontFamily:'Roboto-Regular', fontSize: normalize(18), flexDirection: 'column'}}>
+                            <Text style={{fontFamily:'Roboto-Regular', fontSize: normalize(16)}}>
                                 INFORMATION INFORMATION
                             </Text>
-                            <Text style={{fontFamily:'Roboto-Regular', fontSize: normalize(18), flexDirection: 'column'}}>
+                            <Text style={{fontFamily:'Roboto-Regular', fontSize: normalize(16)}}>
                                 INFORMATION INFORMATION
                             </Text>
-                            <Text style={{fontFamily:'Roboto-Light', fontSize: normalize(18)}}>
+                            <Text style={{fontFamily:'Roboto-Light', fontSize: normalize(14)}}>
                                 INFORMATION INFORMATION
                             </Text>         
                         </View>
-                        <View style={{flex:1, alignItems: 'center', justifyContent:'center'}}>
-                            <TouchableOpacity onPress={_handleOpenWithLinking} style={{borderWidth: 1, borderColor: 'black', paddingHorizontal: 12, paddingVertical: 7, borderRadius: 16}}>   
-                                <Entypo name="paypal" style={{fontSize: 80, color:'#7B68EE'}}/>
+                    </View>
+                    <View style={{ flex:0.8, marginBottom: 10, marginHorizontal:20 , justifyContent:'center', alignItems:'center', flexDirection: 'row'}}>
+                            <TouchableOpacity onPress={_handleOpenWithLinking} style={{borderWidth: 0.5, borderColor: 'black', paddingHorizontal: 12, paddingVertical: 7, borderRadius: 16}}>   
+                                <Entypo name="paypal" style={{fontSize: normalize(80), color:'#7B68EE'}}/>
+                            </TouchableOpacity>                             
+                            <TouchableOpacity onPress={_handleOpenWithLinking} style={{borderWidth: 0.5, borderColor: 'black', paddingHorizontal: 12, paddingVertical: 7, borderRadius: 16, marginLeft: normalize(20)}}>   
+                                <Fontawesome5 name="amazon-pay" style={{fontSize: normalize(80), color:'black'}}/>
                             </TouchableOpacity> 
-                            <Text style={{ fontFamily: 'Roboto-Medium', fontSize:normalize(18), paddingTop: 10}}>
-                                Donazione via PAYPAL
-                            </Text>
-                        </View>
                     </View>
             </View>
         );

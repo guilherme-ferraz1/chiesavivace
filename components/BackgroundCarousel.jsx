@@ -81,7 +81,7 @@ class BackgroundCarousel extends React.Component {
 
 const styles = StyleSheet.create({
   backgroundImage: {
-    height: "100%",
+    height: "90%",
     width: Dimensions.get("window").width
   },
   circleDiv: {
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
-    height: 10
+    height: 50
   },
   whiteCircle: {
     width: 6,

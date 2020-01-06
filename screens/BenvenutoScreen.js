@@ -39,9 +39,9 @@ class BenvenutoScreen extends Component{
                             </Body>
                             <Right style={{flex:1}}/>
                 </Header>
-                    <ScrollView style={{ marginTop:20}}>
-                        <BackgroundCarousel images={images} style={{}}/>
-                        <Text style={{fontFamily:'Roboto-Regular', fontSize: normalize(28), marginTop:40,  marginLeft: 25}}>
+                    <ScrollView style={{ paddingTop:20}}>
+                        <BackgroundCarousel images={images} style={{ }}/>
+                        <Text style={{fontFamily:'Roboto-Regular', fontSize: normalize(28), marginTop:15,  marginLeft: 25}}>
                             Chi siamo?
                         </Text>
                         <Text style={{marginTop: 20, fontFamily:'Roboto-Light', fontSize:normalize(18), marginRight: 20, marginLeft: 25}}>

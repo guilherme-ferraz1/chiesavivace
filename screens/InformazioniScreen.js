@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {View, Text, StyleSheet, Image, SafeAreaView, ImageBackground, TouchableOpacity} from "react-native";
 import openMap from 'react-native-open-maps';
 import { Linking } from 'expo';
-import {Header, Left, Icon, Body, Right} from 'native-base'
+import {Header, Left, Icon, Body, Right, Card} from 'native-base'
 
 import GlobalStyles from "./../components/GlobalStyles";
 import {normalize} from "./../components/Normalize"
@@ -40,7 +40,7 @@ class InformazioniScreen extends Component{
                         </Body>
                         <Right style={{flex:1}}/>
                 </Header>
-                    <View style={{flex:1, backgroundColor:'rgba(105, 186, 131, 0.1)', margin: 30, borderRadius: 16, borderWidth: 1.5 , borderColor: 'rgba(105, 186, 131, 0.2)', justifyContent:'space-around', alignItems:'center'}}>
+                    <View style={{flex:1, backgroundColor:'rgba(105, 186, 131, 0.1)', margin: 30, borderRadius: 16, borderWidth: 1.5 , borderColor: 'rgba(105, 186, 131, 0.2)', justifyContent:'space-around', alignItems:'center', }}>
                         <Text style={{fontFamily: 'Roboto-Regular', fontSize: normalize(30), color: 'black'}}>
                             Domenica Gospel
                         </Text>

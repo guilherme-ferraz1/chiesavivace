@@ -6,7 +6,7 @@ import { Linking } from 'expo';
 
 import GlobalStyles from "./../components/GlobalStyles";
 import {normalize} from "./../components/Normalize"
-import LinkFetch from "./../components/LinkFetch"
+import LinkFetch from "../components/LinkFeth"
 
 
 
